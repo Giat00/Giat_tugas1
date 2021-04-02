@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import DataDosen.Dosen;
+import DataNilai.Nilai;
 
 public class HalamanUtama{
  public static void main(String [] args){
@@ -11,12 +13,15 @@ public class HalamanUtama{
 	String Nama;
 	int npm;
 
-	System.out.print("Masukkan Nama Anda :");
+	System.out.print("Masukkan Nama Anda : ");
 	Nama = scanner.nextLine();
-	System.out.print("Masukkan NPM Anda :");
+	System.out.print("Masukkan NPM Anda : ");
 	npm = scanner.nextInt();
+	System.out.println();
+	System.out.println("Nama Anda "+Nama);
+	System.out.println("NPM Anda "+npm);
 
-	System.out.println(Nama);
-	System.out.println(npm);
+	Dosen.Tampilan();
+	Nilai.Tampilan();
  }
 }
